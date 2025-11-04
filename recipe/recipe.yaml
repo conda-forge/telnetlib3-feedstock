@@ -46,7 +46,7 @@ tests:
 
 about:
   summary: Python 3 asyncio Telnet server and client Protocol library
-  license: BSD-3-Clause
+  license: BSD-3-Clause AND Python-2.0
   license_file: LICENSE.txt
   homepage: http://telnetlib3.rtfd.org/
   repository: https://github.com/jquast/telnetlib3
