@@ -5,9 +5,11 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/telnetlib3-feed
 
 Home: http://telnetlib3.rtfd.org/
 
-Package license: BSD-3-Clause
+Package license: BSD-3-Clause AND Python-2.0
 
 Summary: Python 3 asyncio Telnet server and client Protocol library
+
+Development: https://github.com/jquast/telnetlib3
 
 Current build status
 ====================
@@ -144,4 +146,5 @@ Feedstock Maintainers
 =====================
 
 * [@atrawog](https://github.com/atrawog/)
+* [@beenje](https://github.com/beenje/)
 
