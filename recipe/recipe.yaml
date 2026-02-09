@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: telnetlib3
-  version: "2.2.0"
+  version: "2.3.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/telnetlib3-${{ version }}.tar.gz
-  sha256: 85312604c9f52914938fe3697e5bbd219adab446af0df3045f21b07ba5417f73
+  sha256: 1977654054a8bc7c977511d3bf27a97e459fcfbd8c16b29874e1567226be0ccb
 
 build:
   number: 0
@@ -20,6 +20,8 @@ build:
     entry_points:
       - telnetlib3-server = telnetlib3.server:main
       - telnetlib3-client = telnetlib3.client:main
+      - telnetlib3-fingerprint-server = telnetlib3.fingerprinting:fingerprint_server_main
+      - telnetlib3-fingerprint = telnetlib3.client:fingerprint_main
 
 requirements:
   host:
@@ -40,6 +42,8 @@ tests:
   - script:
       - telnetlib3-server --help
       - telnetlib3-client --help
+      - telnetlib3-fingerprint-server --help
+      - telnetlib3-fingerprint --help
     requirements:
       run:
         - python ${{ python_min }}.*
