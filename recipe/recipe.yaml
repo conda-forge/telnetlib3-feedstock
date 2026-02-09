@@ -20,6 +20,8 @@ build:
     entry_points:
       - telnetlib3-server = telnetlib3.server:main
       - telnetlib3-client = telnetlib3.client:main
+      - telnetlib3-fingerprint-server = telnetlib3.fingerprinting:fingerprint_server_main
+      - telnetlib3-fingerprint = telnetlib3.client:fingerprint_main
 
 requirements:
   host:
@@ -40,6 +42,8 @@ tests:
   - script:
       - telnetlib3-server --help
       - telnetlib3-client --help
+      - telnetlib3-fingerprint-server --help
+      - telnetlib3-fingerprint --help
     requirements:
       run:
         - python ${{ python_min }}.*
