@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: telnetlib3
-  version: "2.5.0"
+  version: "2.6.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/telnetlib3-${{ version }}.tar.gz
-  sha256: a5bf0ae281280154ea184d6bf684cd46031339a06366c4a2445d3db55d13020d
+  sha256: c231e790c626f5b6927a4a85e79bce18cde994c9424254d2193582b430972164
 
 build:
   number: 0
