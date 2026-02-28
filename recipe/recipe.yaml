@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: telnetlib3
-  version: "2.6.0"
+  version: "2.6.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/telnetlib3-${{ version }}.tar.gz
-  sha256: c231e790c626f5b6927a4a85e79bce18cde994c9424254d2193582b430972164
+  sha256: 6b365973df176ac1ddb823c98c99bb02f3a7540f7b94f22378651998e05754be
 
 build:
   number: 0
@@ -30,7 +30,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - wcwidth >=0.2.13
+    - wcwidth >=0.6.0
 
 tests:
   - python:
